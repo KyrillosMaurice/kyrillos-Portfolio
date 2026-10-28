@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services | Kyrillos Maurice</title>
+    <meta name="description" content="Explore Kyrillos Maurice's service offerings in data analytics, branding, and UI/UX design." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+    <script>
+      (function () {
+        try {
+          const saved = localStorage.getItem('theme');
+          const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          const theme = saved || (prefersDark ? 'dark' : 'light');
+          document.documentElement.setAttribute('data-theme', theme);
+        } catch (e) {}
+      })();
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <aside class="nav-dock" aria-label="Main navigation">
+        <button class="dock-toggle" type="button" aria-label="Open navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="dock-menu" aria-label="Navigation links">
+          <a class="nav-item" href="index.html"><span>Home</span></a>
+          <a class="nav-item" href="about.html"><span>About</span></a>
+          <a class="nav-item" href="portfolio.html"><span>Portfolio</span></a>
+          <a class="nav-item active" href="services.html"><span>Services</span></a>
+          <a class="nav-item" href="insights.html"><span>Insights</span></a>
+          <a class="nav-item" href="contact.html"><span>Contact</span></a>
+        </nav>
+        <button class="theme-toggle" type="button" aria-label="Toggle color theme">
+          <span class="theme-icon">☀️</span>
+        </button>
+      </aside>
+
+      <main class="page-content">
+        <header class="page-banner reveal">
+          <p class="eyebrow">Services</p>
+          <h1>Practical services for business clarity, stronger communication, and better decisions.</h1>
+        </header>
+
+        <section class="section reveal">
+          <div class="service-grid service-grid-large">
+            <article class="service-card big">
+              <span class="service-number">01</span>
+              <h3>Data Analytics</h3>
+              <p>Clear dashboards, business reporting, spreadsheet analysis, and insight-driven recommendations designed around real decision-making needs.</p>
+              <ul class="check-list compact">
+                <li>Data cleaning and verification</li>
+                <li>Power BI and Looker reporting</li>
+                <li>Spreadsheet and SQL analysis</li>
+              </ul>
+              <a href="services/data-analytics.html" class="button secondary" aria-label="View Data Analytics services">View service</a>
+            </article>
+            <article class="service-card big">
+              <span class="service-number">02</span>
+              <h3>Graphic Design & Branding</h3>
+              <p>Distinct identities, communication systems, and design assets that help businesses feel more credible and consistent.</p>
+              <ul class="check-list compact">
+                <li>Logo and identity systems</li>
+                <li>Marketing materials</li>
+                <li>Social and print design</li>
+              </ul>
+              <a href="services/graphic-design.html" class="button secondary" aria-label="View Graphic Design services">View service</a>
+            </article>
+            <article class="service-card big">
+              <span class="service-number">03</span>
+              <h3>UI/UX Design</h3>
+              <p>User research, interface design, and thoughtful product strategy that help digital experiences feel intuitive and effective.</p>
+              <ul class="check-list compact">
+                <li>UX research and flows</li>
+                <li>Wireframes and prototypes</li>
+                <li>Responsive product design</li>
+              </ul>
+              <a href="services/ui-ux-design.html" class="button secondary" aria-label="View UI/UX Design services">View service</a>
+            </article>
+          </div>
+        </section>
+
+        <section class="section reveal">
+          <div class="section-head">
+            <p class="eyebrow">How it works</p>
+            <h2>From inquiry to agreement.</h2>
+          </div>
+          <div class="process-grid">
+            <div class="process-step"><span>01</span><h3>Discover</h3><p>Understand the goal, audience, and context.</p></div>
+            <div class="process-step"><span>02</span><h3>Define</h3><p>Clarify scope, deliverables, timeline, and budget expectations.</p></div>
+            <div class="process-step"><span>03</span><h3>Agree</h3><p>Confirm the proposal and next steps in a clear format.</p></div>
+            <div class="process-step"><span>04</span><h3>Deliver</h3><p>Provide the work and documentation with transparent follow-up.</p></div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

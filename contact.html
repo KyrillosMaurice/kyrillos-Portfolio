@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Kyrillos Maurice</title>
+    <meta name="description" content="Contact Kyrillos Maurice for a design, branding, or analytics project inquiry using WhatsApp or email." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+    <script>
+      (function () {
+        try {
+          const saved = localStorage.getItem('theme');
+          const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          const theme = saved || (prefersDark ? 'dark' : 'light');
+          document.documentElement.setAttribute('data-theme', theme);
+        } catch (e) {}
+      })();
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <aside class="nav-dock" aria-label="Main navigation">
+        <button class="dock-toggle" type="button" aria-label="Open navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="dock-menu" aria-label="Navigation links">
+          <a class="nav-item" href="index.html"><span>Home</span></a>
+          <a class="nav-item" href="about.html"><span>About</span></a>
+          <a class="nav-item" href="portfolio.html"><span>Portfolio</span></a>
+          <a class="nav-item" href="services.html"><span>Services</span></a>
+          <a class="nav-item" href="insights.html"><span>Insights</span></a>
+          <a class="nav-item active" href="contact.html"><span>Contact</span></a>
+        </nav>
+        <button class="theme-toggle" type="button" aria-label="Toggle color theme">
+          <span class="theme-icon">☀️</span>
+        </button>
+      </aside>
+
+      <main class="page-content">
+        <header class="page-banner reveal">
+          <p class="eyebrow">Contact</p>
+          <h1>Start a conversation about your project, challenge, or opportunity.</h1>
+        </header>
+
+        <section class="section reveal contact-layout">
+          <div class="contact-form-card">
+            <form id="projectForm" novalidate>
+              <div class="field-row">
+                <label>
+                  Full Name
+                  <input type="text" name="name" required />
+                </label>
+                <label>
+                  Email Address
+                  <input type="email" name="email" required />
+                </label>
+              </div>
+
+              <div class="field-row">
+                <label>
+                  Selected Service
+                  <select name="service" required>
+                    <option value="">Choose a service</option>
+                    <option>UI/UX Design</option>
+                    <option>Graphic Design & Branding</option>
+                    <option>Data Analytics</option>
+                  </select>
+                </label>
+                <label>
+                  Target Deadline
+                  <input type="text" name="deadline" placeholder="e.g. 3-4 weeks" />
+                </label>
+              </div>
+
+              <label>
+                Project Description
+                <textarea name="description" rows="5" required></textarea>
+              </label>
+
+              <label>
+                Required Deliverables
+                <textarea name="deliverables" rows="4" placeholder="Examples: dashboard, brand identity, website redesign, research package"></textarea>
+              </label>
+
+              <div class="field-row">
+                <label>
+                  Estimated Budget
+                  <input type="text" name="budget" placeholder="Optional" />
+                </label>
+                <label>
+                  Preferred Communication Method
+                  <select name="channel" required>
+                    <option value="whatsapp">WhatsApp</option>
+                    <option value="email">Email</option>
+                  </select>
+                </label>
+              </div>
+
+              <div class="form-actions">
+                <button type="submit" class="button primary">Prepare inquiry</button>
+                <button type="button" class="button secondary" id="previewMessage">Review message</button>
+              </div>
+
+              <div id="formStatus" class="form-status" aria-live="polite"></div>
+            </form>
+          </div>
+
+          <aside class="contact-panel">
+            <h2>Direct contact</h2>
+            <ul class="contact-list">
+              <li><strong>Email:</strong> <a href="mailto:kyrillos.maurice@gmail.com">kyrillos.maurice@gmail.com</a></li>
+              <li><strong>WhatsApp:</strong> <a href="https://wa.me/201027436681" target="_blank" rel="noreferrer">+20 1027436681</a></li>
+              <li><strong>Location:</strong> Giza, Egypt</li>
+              <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/kyrillos-maurice" target="_blank" rel="noreferrer">linkedin.com/in/kyrillos-maurice</a></li>
+              <li><strong>Behance:</strong> <a href="https://www.behance.net/kyrillosmaurice" target="_blank" rel="noreferrer">behance.net/kyrillosmaurice</a></li>
+            </ul>
+          </aside>
+        </section>
+      </main>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Graphic Design & Branding Service | Kyrillos Maurice</title>
+    <meta name="description" content="Graphic design and branding service overview and quotes." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+    <script>
+      (function () {
+        try {
+          const saved = localStorage.getItem('theme');
+          const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          const theme = saved || (prefersDark ? 'dark' : 'light');
+          document.documentElement.setAttribute('data-theme', theme);
+        } catch (e) {}
+      })();
+    </script>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <aside class="nav-dock" aria-label="Main navigation">
+        <button class="dock-toggle" type="button" aria-label="Open navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="dock-menu" aria-label="Navigation links">
+          <a class="nav-item" href="../index.html"><span>Home</span></a>
+          <a class="nav-item" href="../about.html"><span>About</span></a>
+          <a class="nav-item" href="../portfolio.html"><span>Portfolio</span></a>
+          <a class="nav-item active" href="../services.html"><span>Services</span></a>
+          <a class="nav-item" href="../insights.html"><span>Insights</span></a>
+          <a class="nav-item" href="../contact.html"><span>Contact</span></a>
+        </nav>
+        <button class="theme-toggle" type="button" aria-label="Toggle color theme">
+          <span class="theme-icon">☀️</span>
+        </button>
+      </aside>
+
+      <main class="page-content">
+        <article class="service-page">
+          <header class="page-banner reveal">
+            <p class="eyebrow">Graphic Design & Branding</p>
+            <h1>Build a stronger visual presence and communicate with more confidence.</h1>
+          </header>
+
+          <section class="section reveal">
+            <div class="split-layout">
+              <div>
+                <h2>Overview</h2>
+                <p>Branding and visual design help businesses present a clearer identity, stronger positioning, and more consistent presence across digital and print touchpoints.</p>
+              </div>
+              <div class="detail-panel">
+                <p><strong>Intended audience:</strong> founders, startups, small businesses, marketing teams.</p>
+                <p><strong>Deliverables:</strong> logo concepts, identity systems, social graphics, campaign visuals, presentation design.</p>
+                <p><strong>Pricing approach:</strong> fixed-price or custom quotation depending on scope and output needs.</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="section reveal">
+            <div class="section-head">
+              <p class="eyebrow">What is included</p>
+              <h2>Brand communication that feels intentional.</h2>
+            </div>
+            <div class="service-grid">
+              <article class="service-card"><span class="service-number">A</span><h3>Identity design</h3><p>Visual systems that reflect business values and improve recognition.</p></article>
+              <article class="service-card"><span class="service-number">B</span><h3>Marketing assets</h3><p>Graphics and layouts designed for digital reach and communication clarity.</p></article>
+              <article class="service-card"><span class="service-number">C</span><h3>Print and presentation</h3><p>Business cards, brochures, presentation decks, and print-ready assets.</p></article>
+            </div>
+          </section>
+
+          <section class="section reveal">
+            <div class="cta-panel compact">
+              <div>
+                <p class="eyebrow">Need this service?</p>
+                <h2>Request a tailored quotation.</h2>
+              </div>
+              <a class="button primary" href="../contact.html">Request service</a>
+            </div>
+          </section>
+        </article>
+      </main>
+    </div>
+
+    <script src="../main.js"></script>
+  </body>
+</html>
